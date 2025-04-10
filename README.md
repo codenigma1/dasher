@@ -28,7 +28,7 @@ A fun, beginner-friendly 2D platformer made using C++ and [Raylib](https://www.r
 git clone https://github.com/microsoft/vcpkg
 cd vcpkg
 ./bootstrap-vcpkg.sh  # or .\bootstrap-vcpkg.bat on Windows
-
+```
 # Install raylib
 ./vcpkg install raylib
 
@@ -37,7 +37,7 @@ cd vcpkg
 ```bash
 g++ -std=c++17 main.cpp -o dapper -I/path/to/vcpkg/installed/include -L/path/to/vcpkg/installed/lib -lraylib
 ./dapper
-
+```
 
 # Option 2: Manual Setup
 1. Download `raylib.h` and `libraylib.a` for your platform.
@@ -48,7 +48,7 @@ Compile like this:
 ```bash
 g++ -std=c++17 main.cpp -o dapper -I. libraylib.a -lopengl32 -lgdi32 -lwinmm
 ./dapper
-
+```
 
 # 🧪 How to Run
 - Press SPACE to jump
