@@ -30,7 +30,9 @@ cd vcpkg
 ./bootstrap-vcpkg.sh  # or .\bootstrap-vcpkg.bat on Windows
 ```
 # Install raylib
+```bash
 ./vcpkg install raylib
+```
 
 # Then, when compiling your project:
 
@@ -43,7 +45,7 @@ g++ -std=c++17 main.cpp -o dapper -I/path/to/vcpkg/installed/include -L/path/to/
 1. Download `raylib.h` and `libraylib.a` for your platform.
 2. Place both files in your project directory.
 
-Compile like this: 
+# Compile like this: 
 
 ```bash
 g++ -std=c++17 main.cpp -o dapper -I. libraylib.a -lopengl32 -lgdi32 -lwinmm
@@ -51,7 +53,7 @@ g++ -std=c++17 main.cpp -o dapper -I. libraylib.a -lopengl32 -lgdi32 -lwinmm
 ```
 
 # 🧪 How to Run
-- Press SPACE to jump
-- Press S to activate shield (lasts 10 seconds, shows countdown)
-- Press R to restart after game over
-- Avoid red nebula in Boss Level (Level 10)
+- Press `SPACE` to jump
+- Press `S` to activate shield (lasts 10 seconds, shows countdown)
+- Press `R` to restart after game over
+- Avoid `red` nebula in `Boss Level` (Level 10)
