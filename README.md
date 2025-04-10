@@ -32,4 +32,26 @@ cd vcpkg
 # Install raylib
 ./vcpkg install raylib
 
-**Note**: Find any video to install raylib package via `vcpkg`
+# Then, when compiling your project:
+
+```bash
+g++ -std=c++17 main.cpp -o dapper -I/path/to/vcpkg/installed/include -L/path/to/vcpkg/installed/lib -lraylib
+./dapper
+
+
+# Option 2: Manual Setup
+1. Download `raylib.h` and `libraylib.a` for your platform.
+2. Place both files in your project directory.
+
+Compile like this: 
+
+```bash
+g++ -std=c++17 main.cpp -o dapper -I. libraylib.a -lopengl32 -lgdi32 -lwinmm
+./dapper
+
+
+# 🧪 How to Run
+- Press SPACE to jump
+- Press S to activate shield (lasts 10 seconds, shows countdown)
+- Press R to restart after game over
+- Avoid red nebula in Boss Level (Level 10)
